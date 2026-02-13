@@ -64,7 +64,7 @@ public class AppleTree : MonoBehaviour
     {
         GameObject prefabToSpawn = applePrefab;
 
-        if (GameManager.Instance.currentDifficulty == GameManager.Difficulty.Medium)
+        if (GameManager.Instance.currentDifficulty == GameManager.Difficulty.Medium || GameManager.Instance.currentDifficulty == GameManager.Difficulty.Hard)
         {
             // 30% chance for rotten apple
             if (Random.value < 0.3f)
